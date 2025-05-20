@@ -1,4 +1,7 @@
 import { createRoot } from "react-dom/client"
+import Header from "./Header.jsx"
+import Main from "./MainContent.jsx"
+import Footer from "./Footer.jsx"
 import './index.css';
 
 // const root = createRoot(document.getElementById("root"))
@@ -38,41 +41,6 @@ import './index.css';
 //document.getElementById("root").appendChild(h1)
 
 const root = createRoot(document.getElementById("root"))
-
-function Header() {
-    return (
-        <>
-            <header>
-                <img src="/public/logo192.png" alt="React Logo" className="logo" />
-                <h1>OMG React</h1>
-            </header>
-        </>
-    )
-}
-
-function Main() {
-    return (
-        <>
-                <ol>
-                    <li>Was first release in 2013</li>
-                    <li>Was originally created by Jordan Walke</li>
-                    <li>Has well over 200K stars on GitHub</li>
-                    <li>Is maintained by Meta</li>
-                    <li>Powers thousands of enterprise apps, including mobile apps</li>
-                </ol>
-        </>    
-    )
-}
-
-function Footer() {
-    return (
-        <>
-            <footer>
-                <small>© 2025 Visual Anxiety. All rights reserved.</small>
-            </footer>
-        </>
-    )
-}
 
 function Page() {   
     return (
