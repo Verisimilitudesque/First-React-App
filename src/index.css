@@ -5,29 +5,65 @@ body {
     text-align: left;
 }
 
-h1 {
-    margin-top: 10px;
+main {
+    padding: 60px 30px;
+    background-image: url("images/react-logo-half.png");
+    background-repeat: no-repeat;
+    background-position: right 70%;
 }
 
+main > h1 {
+    margin: 0;
+    font-size: 2.4rem;
+}
 .logo {
     height: 55px;
     width: auto;
 }
 
-.header {
+header {
+    height: 90px;
+    background-color: #21222A;
+    padding: 30px 25px;
+}
+
+nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid white;
+    height: 100%;
 }
 
-.nav-items {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+nav > img {
+    width: 40px;
+    margin-right: 7px;
 }
 
-.nav-items li {
-    margin: 0 10px;
+nav > span {
+    color: #61DAFB;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+main {
+    padding: 60px 30px;
+}
+
+main > h1 {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.facts-list {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.facts-list > li {
+    margin-block: 10px;
+    line-height: 19px;
+}
+
+.facts-list > li::marker {
+    color: #61DAFB;
+    font-size: 2rem;
 }
