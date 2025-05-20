@@ -1,4 +1,4 @@
-// import { createRoot } from "react-dom/client"
+import { createRoot } from "react-dom/client"
 import './index.css';
 
 // const root = createRoot(document.getElementById("root"))
@@ -37,27 +37,54 @@ import './index.css';
 // Renders the element to the DOM
 //document.getElementById("root").appendChild(h1)
 
-
-// Add image and html in React 
-
-import { createRoot } from "react-dom/client"
 const root = createRoot(document.getElementById("root"))
 
-
-function PageComp() {
+function Header() {
     return (
-          <main>
-        <ul>
-            <li>Was first release in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 200K stars on GitHub</li>
-            <li>Is maintained by Meta</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </main>
+        <>
+            <header>
+                <img src="/public/logo192.png" alt="React Logo" className="logo" />
+                <h1>OMG React</h1>
+            </header>
+        </>
     )
 }
 
+function Main() {
+    return (
+        <>
+                <ol>
+                    <li>Was first release in 2013</li>
+                    <li>Was originally created by Jordan Walke</li>
+                    <li>Has well over 200K stars on GitHub</li>
+                    <li>Is maintained by Meta</li>
+                    <li>Powers thousands of enterprise apps, including mobile apps</li>
+                </ol>
+        </>    
+    )
+}
+
+function Footer() {
+    return (
+        <>
+            <footer>
+                <small>© 2025 Visual Anxiety. All rights reserved.</small>
+            </footer>
+        </>
+    )
+}
+
+function Page() {   
+    return (
+        <>
+            <Header />
+            <Main />
+            <Footer />
+        </>
+    )
+
+}
+
 root.render(
-  <PageComp />
+    <Page />
 )
