@@ -43,10 +43,10 @@ import './index.css';
 import { createRoot } from "react-dom/client"
 const root = createRoot(document.getElementById("root"))
 
-root.render(
-    <main>
-        <img src="../public/logo192.png" width="40px" alt="react logo" />
-        <h1>Fun facts about React!</h1>
+
+function PageComp() {
+    return (
+          <main>
         <ul>
             <li>Was first release in 2013</li>
             <li>Was originally created by Jordan Walke</li>
@@ -55,4 +55,9 @@ root.render(
             <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
     </main>
+    )
+}
+
+root.render(
+  <PageComp />
 )
